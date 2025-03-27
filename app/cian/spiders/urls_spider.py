@@ -66,13 +66,6 @@ class CianOffersSpider(Spider):
 
                 yield UrlItem(**{"url": url})
 
-            # yield SeleniumRequest(
-            #     url=url,
-            #     method="GET",
-            #     callback=self.parse_product,
-            #     errback=self.handle_error,
-            # )
-
     def handle_error(self, failure) -> None:
         if failure.check(HttpError):
             self.logger.error(

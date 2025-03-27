@@ -2,10 +2,10 @@ import json
 import os
 from typing import Any, Generator, Iterable
 
-from scrapy_playwright.page import PageMethod
 from scrapy import Spider
 from scrapy.http import Request, Response
 from scrapy.spidermiddlewares.httperror import HttpError
+from scrapy_playwright.page import PageMethod
 from twisted.internet.error import DNSLookupError, TCPTimedOutError
 
 from cian.items import OfferItem

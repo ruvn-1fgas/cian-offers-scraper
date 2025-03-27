@@ -1,7 +1,9 @@
-import pymongo
-from cian.items import OfferItem
-from itemadapter import ItemAdapter
 import base64
+
+import pymongo
+from itemadapter import ItemAdapter
+
+from cian.items import OfferItem
 
 
 class MongoDBPipeline:
